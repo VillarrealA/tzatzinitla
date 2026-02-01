@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Equipo — Tzatzinitla</title>
+  <link rel="stylesheet" href="/tzatzinitla/assets/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <nav class="nav">
+      <a href="/tzatzinitla/">Inicio</a>
+      <a href="/tzatzinitla/proyectos/">Proyectos</a>
+      <a href="/tzatzinitla/publicaciones/">Publicaciones</a>
+      <a class="active" href="/tzatzinitla/equipo/">Equipo</a>
+      <a href="/tzatzinitla/contacto/">Contacto</a>
+    </nav>
+
+    <div class="card" style="padding:22px;">
+      <h1 style="margin:0 0 8px;">Equipo</h1>
+      <p class="subtitle" style="margin:0;">
+        Personas, estudiantes y colaboraciones. (Aquí puedes poner solo a quienes quieras mostrar públicamente.)
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Responsable</h2>
+      <div class="cards" style="grid-template-columns: repeat(2, 1fr);">
+        <div class="tile">
+          <div class="portrait" style="margin:0; border:none; background:transparent; padding:0;">
+            <div class="avatar">
+              <!-- Opcional: <img src="/tzatzinitla/assets/alejandro.jpg" alt="Foto"> -->
+            </div>
+            <div>
+              <h3 style="margin:0 0 4px;">Alejandro Villarreal López</h3>
+              <p style="margin:0; color:var(--muted);">
+                Instrumentación · Procesamiento de señal · Ultrasonido/RMN<br>
+                CIIDIR-IPN Oaxaca · Colaboraciones UNAM
+              </p>
+            </div>
+          </div>
+          <div style="margin-top:12px; color:var(--muted); line-height:1.5;">
+            Línea de trabajo: caracterización de materiales y sistemas biomédicos, diseño de hardware y análisis reproducible.
+          </div>
+          <div class="actions" style="margin-top:12px;">
+            <a class="btn" href="/tzatzinitla/contacto/">Bio & Contacto</a>
+            <a class="btn" href="https://github.com/VillarrealA">GitHub</a>
+          </div>
+        </div>
+
+        <div class="tile">
+          <div class="title">Áreas</div>
+          <p class="desc">
+            • Ultrasonido (NDT / biomédico)<br>
+            • RMN / MRI (antenas y simulación EM)<br>
+            • Electrónica e IoT (sensores, adquisición y monitoreo)<br>
+            • Procesamiento de señales (correlación, cepstrum, features espectrales)
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Estudiantes</h2>
+      <div class="cards">
+        <div class="tile">
+          <div class="title">Nombre Estudiante 1</div>
+          <p class="desc">Rol / grado · Tema (2–3 líneas).<br>Links: <a href="#">tesis</a> · <a href="#">repo</a></p>
+        </div>
+        <div class="tile">
+          <div class="title">Nombre Estudiante 2</div>
+          <p class="desc">Rol / grado · Tema (2–3 líneas).<br>Links: <a href="#">tesis</a> · <a href="#">repo</a></p>
+        </div>
+        <div class="tile">
+          <div class="title">Nombre Estudiante 3</div>
+          <p class="desc">Rol / grado · Tema (2–3 líneas).<br>Links: <a href="#">tesis</a> · <a href="#">repo</a></p>
+        </div>
+        <div class="tile">
+          <div class="title">¿Te interesa colaborar?</div>
+          <p class="desc">Mándame un correo con tu idea/propuesta y habilidades.<br><a href="/tzatzinitla/contacto/">Contacto</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Colaboraciones</h2>
+      <div class="cards" style="grid-template-columns: repeat(2, 1fr);">
+        <div class="tile">
+          <div class="title">Instituciones</div>
+          <p class="desc">
+            • CIIDIR-IPN Oaxaca<br>
+            • UNAM (Facultad de Ciencias / colaboraciones)<br>
+            • (Agrega aquí las que quieras)
+          </p>
+        </div>
+        <div class="tile">
+          <div class="title">Cómo trabajamos</div>
+          <p class="desc">
+            Proyectos con documentación, repositorios, bitácoras de experimentos y resultados reproducibles.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">© <span id="year"></span> VillarrealA · Tzatzinitla</div>
+  </div>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

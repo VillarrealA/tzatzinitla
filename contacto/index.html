@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contacto — Tzatzinitla</title>
+  <link rel="stylesheet" href="/tzatzinitla/assets/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <nav class="nav">
+      <a href="/tzatzinitla/">Inicio</a>
+      <a href="/tzatzinitla/proyectos/">Proyectos</a>
+      <a href="/tzatzinitla/publicaciones/">Publicaciones</a>
+      <a href="/tzatzinitla/equipo/">Equipo</a>
+      <a class="active" href="/tzatzinitla/contacto/">Contacto</a>
+    </nav>
+
+    <div class="hero" style="margin-top:26px;">
+      <div class="card heroLeft">
+        <div class="kicker"><span class="dot"></span> Bio · Contacto · Enlaces</div>
+        <h1>Sobre mí</h1>
+        <p class="subtitle">
+          Soy <b>Alejandro Villarreal López</b>. Trabajo en instrumentación, procesamiento de señales y modelado
+          aplicado a ultrasonido y RMN/MRI. Me interesa desarrollar hardware reproducible y pipelines de análisis
+          que conecten experimentos con simulación y resultados cuantitativos.
+        </p>
+
+        <div class="actions">
+          <a class="btn primary" href="mailto:alejandro.v@unam.mx">alejandro.v@unam.mx <span class="mini">✉</span></a>
+          <a class="btn" href="https://github.com/VillarrealA">GitHub <span class="mini">↗</span></a>
+          <a class="btn" href="https://scholar.google.com/">Scholar <span class="mini">↗</span></a>
+          <a class="btn" href="https://orcid.org/">ORCID <span class="mini">↗</span></a>
+        </div>
+      </div>
+
+      <div class="card heroRight">
+        <div class="portrait">
+          <div class="avatar">
+            <!-- Opcional: <img src="/tzatzinitla/assets/alejandro.jpg" alt="Foto"> -->
+          </div>
+          <div>
+            <h3>Afiliación</h3>
+            <p>
+              CIIDIR-IPN Oaxaca<br>
+              Colaboraciones UNAM / Facultad de Ciencias
+            </p>
+          </div>
+        </div>
+
+        <div class="stat">
+          <div class="label">Temas</div>
+          <div class="value">Ultrasonido · RMN · Electrónica · IoT</div>
+        </div>
+
+        <div class="stat">
+          <div class="label">Disponibilidad</div>
+          <div class="value">Colaboraciones / asesorías / proyectos</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Qué tipo de mensajes contestan rápido</h2>
+      <div class="cards" style="grid-template-columns: repeat(2, 1fr);">
+        <div class="tile">
+          <div class="title">Colaboraciones técnicas</div>
+          <p class="desc">Describe el problema, qué datos tienes, y qué esperas obtener (1–2 párrafos).</p>
+        </div>
+        <div class="tile">
+          <div class="title">Estudiantes</div>
+          <p class="desc">Incluye nivel, intereses, y disponibilidad. Si ya tienes una idea de tesis, mejor.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">© <span id="year"></span> VillarrealA · Tzatzinitla</div>
+  </div>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

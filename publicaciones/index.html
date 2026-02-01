@@ -4,27 +4,112 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Publicaciones — Tzatzinitla</title>
+  <link rel="stylesheet" href="/tzatzinitla/assets/style.css">
 </head>
-<body style="font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial; margin:0; padding:32px; text-align:center;">
+<body>
+  <div class="container">
 
-  <h1 style="margin-top:0;">Publicaciones</h1>
+    <nav class="nav">
+      <a href="/tzatzinitla/">Inicio</a>
+      <a href="/tzatzinitla/proyectos/">Proyectos</a>
+      <a class="active" href="/tzatzinitla/publicaciones/">Publicaciones</a>
+      <a href="/tzatzinitla/equipo/">Equipo</a>
+      <a href="/tzatzinitla/contacto/">Contacto</a>
+    </nav>
 
-  <nav style="display:flex; gap:16px; justify-content:center; margin-bottom:24px; flex-wrap:wrap;">
-    <a href="/tzatzinitla/">Inicio</a>
-    <a href="/tzatzinitla/proyectos/">Proyectos</a>
-    <a href="/tzatzinitla/publicaciones/">Publicaciones</a>
-    <a href="/tzatzinitla/equipo/">Equipo</a>
-    <a href="/tzatzinitla/contacto/">Contacto</a>
-  </nav>
+    <div class="card" style="padding:22px;">
+      <h1 style="margin:0 0 8px;">Publicaciones</h1>
+      <p class="subtitle" style="margin:0;">
+        Artículos, posters y recursos. Enlaces a DOI/página de la revista, PDF (si aplica) y código/datos.
+      </p>
+    </div>
 
-  <div style="text-align:left; max-width:900px; margin:0 auto;">
-    <p><b>2025</b> — Apellido A., Apellido B., <b>Villarreal A.</b><br>
-      “Título del artículo”. <i>Revista/Conferencia</i>.<br>
-      <a href="https://doi.org/xxxxx">DOI</a> ·
-      <a href="/tzatzinitla/docs/paper2025.pdf">PDF</a> ·
-      <a href="https://github.com/…">Código</a>
-    </p>
+    <div class="section">
+      <h2>2025</h2>
+      <div class="cards" style="grid-template-columns: repeat(2, 1fr);">
+
+        <div class="tile">
+          <div class="title">Título del artículo (2025)</div>
+          <p class="desc">
+            Apellido A., Apellido B., <b>Villarreal A.</b><br>
+            <i>Nombre de la revista</i>, Vol(X), pp–pp.<br>
+          </p>
+          <div class="actions">
+            <!-- 1) DOI (recomendado) -->
+            <a class="btn primary" href="https://doi.org/10.XXXX/XXXX">DOI <span class="mini">↗</span></a>
+
+            <!-- 2) Página de la revista (si quieres link directo al article page) -->
+            <a class="btn" href="https://publisher.com/journal/article/xxxxx">Revista <span class="mini">↗</span></a>
+
+            <!-- 3) PDF (solo si tienes permiso; si es tu preprint o versión permitida) -->
+            <a class="btn" href="/tzatzinitla/docs/paper2025.pdf">PDF</a>
+
+            <!-- 4) Código/Datos -->
+            <a class="btn" href="https://github.com/…">Código <span class="mini">↗</span></a>
+          </div>
+        </div>
+
+        <div class="tile">
+          <div class="title">Poster / conferencia (2025)</div>
+          <p class="desc">
+            Apellido A., <b>Villarreal A.</b><br>
+            <i>Nombre del evento</i> — Ciudad, País.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="/tzatzinitla/docs/poster2025.pdf">PDF</a>
+            <a class="btn" href="https://github.com/…">Material <span class="mini">↗</span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>2024</h2>
+      <div class="cards" style="grid-template-columns: repeat(2, 1fr);">
+
+        <div class="tile">
+          <div class="title">Título del artículo (2024)</div>
+          <p class="desc">
+            Autores…<br>
+            <i>Revista</i>.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="https://doi.org/10.XXXX/XXXX">DOI <span class="mini">↗</span></a>
+            <a class="btn" href="https://publisher.com/...">Revista <span class="mini">↗</span></a>
+            <a class="btn" href="/tzatzinitla/docs/paper2024_preprint.pdf">Preprint</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Perfiles</h2>
+      <div class="cards">
+        <a class="tile" href="https://scholar.google.com/">
+          <div class="title">Google Scholar</div>
+          <p class="desc">Citas, métricas, lista completa.</p>
+        </a>
+        <a class="tile" href="https://orcid.org/">
+          <div class="title">ORCID</div>
+          <p class="desc">Identificador y publicaciones enlazadas.</p>
+        </a>
+        <a class="tile" href="https://www.researchgate.net/">
+          <div class="title">ResearchGate</div>
+          <p class="desc">Preprints, preguntas, lecturas.</p>
+        </a>
+        <a class="tile" href="https://github.com/VillarrealA">
+          <div class="title">GitHub</div>
+          <p class="desc">Código y repos de proyectos.</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer">© <span id="year"></span> VillarrealA · Tzatzinitla</div>
   </div>
 
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
